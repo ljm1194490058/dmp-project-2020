@@ -47,7 +47,7 @@ public class RealTimeVehicleStatJob {
         JavaPairInputDStream<String, String> messages = createKafkaMsg(jsc);
 
         //测试是否能够读取kafkakafka中得数据
-        messages.print();
+//        messages.print();
 
         /*
             step 3 完成拉取到的数据的计算

@@ -12,9 +12,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="car-project" target="1.8" />
       <module name="vehicle-calc" target="1.8" />
       <module name="vehicle-common" target="1.8" />
+      <module name="vehicle-project" target="1.8" />
       <module name="vehicle-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>

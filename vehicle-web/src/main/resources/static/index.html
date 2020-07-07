@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中公车辆流量实时监控大屏</title>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script>
+	 $(window).load(function(){  
+             $(".loading").fadeOut()
+            })  
+	</script>
+	
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+	<div class="loading">
+      <div class="loadbox"> <img src="images/loading.gif"> 页面加载中... </div>
+    </div>
+<div class="data">
+    <div class="data-title">
+        <div class="title-center ">中公车辆流量实时监控大屏</div>
+    </div>
+    <div class="data-content">
+        <div class="con-left fl">
+            <div class="left-top">
+                <div class="info boxstyle">
+                    <div class="title">实时统计</div>
+                    <div class="info-main">
+						<ul>
+							<li><img src="images/info-img-1.png" alt=""><span>车辆总数(辆)</span><p id="id_total_vehicle">12,457</p></li>
+							<li><img src="images/info-img-2.png" alt=""><span>当前在线数(辆)</span><p id="id_online_vehicle">12,457</p></li>
+							<li><img src="images/info-img-3.png" alt=""><span>今日活跃数(辆)</span><p id="id_active_vehicle">12,457</p></li>
+							<li><img src="images/info-img-4.png" alt=""><span>今日活跃率(%)</span><p id="id_active_percent">74%</p></li>
+						</ul>
+                    </div>
+                </div>
+                <div class="top-bottom boxstyle">
+                    <div class="title">行业分类</div>
+                    <div id="id_industry_category" class="charts"></div>
+                </div>
+            </div>
+            <div class="left-bottom boxstyle">
+                <div class="title">车型分类</div>
+                <div id="id_vehicle_category" class="charts"></div>
+            </div>
+        </div>
+        <div class="con-center fl">
+            <div class="map-num">
+                <p>实时行驶车辆(辆)</p>
+                <div id="num" class="num">
+                    <span>1</span>
+                    <span>5</span>
+                    <span>4</span>
+                    <span>9</span>
+                    <span>2</span>
+                    <span>6</span>
+                    <span>8</span>
+                </div>
+            </div>
+            <div class="cen-top map" id="id_vehicle_part_map"></div>
+
+            <div class="cen-bottom boxstyle">
+                <div class="title">车辆充电高峰时间</div>
+                <div id="id_charging_time_peak" class="charts"></div>
+            </div>
+        </div>
+        <div class="con-right fr">
+            <div class="right-top boxstyle">
+                <div class="title">本月行驶里程TOP5</div>
+                <div id="id_month_mileage_top" class="charts"></div>
+            </div>
+            <div class="right-center boxstyle">
+                <div class="title">异常操作TOP5</div>
+                <div id="id_warn_vehicle_top" class="charts"></div>
+            </div>
+            <div class="right-bottom boxstyle">
+                <div class="title">报警事件TOP5</div>
+                <div id="id_warn_charge_top" class="charts"></div>
+            </div>
+        </div>
+    </div>
+</div> 
+</body>
+
+<script src="js/echarts.min.js"></script>
+<script src="js/china.js"></script>
+
+<!--动态加载数据文件-->
+<script src="js/common.js"></script>
+<script src="js/setData/setData-all-vehicles.js"></script>
+<script src="js/setData/setData-vehicle-part-map.js"></script>
+<script src="js/setData/setData-real-time-stat.js"></script>
+<script src="js/setData/setData-industry-category.js"></script>
+<script src="js/setData/setData-vehicle-category.js"></script>
+<script src="js/setData/setData-charging-time-peak.js"></script>
+<script src="js/setData/setData-month-mileage-top.js"></script>
+<script src="js/setData/setData-warn-vehicle-top.js"></script>
+<script src="js/setData/setData-warn-charge-top.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    loadInit();
+</script>
+</html>

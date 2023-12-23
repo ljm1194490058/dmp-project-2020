@@ -2,8 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vehicle-calc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-calc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vehicle-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/vehicle-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/vehicle-web/src/main/java" charset="UTF-8" />
   </component>
 </project>
